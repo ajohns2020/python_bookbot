@@ -7,7 +7,7 @@ def get_book_text(filepath): # Stores all characters in memory.
 def book_word_counter(filepath):  
     text = get_book_text(filepath)  # Use the parameter, not hardcoded path
     words = text.split() 
-    word_count = len(words)
+    word_count = len(words) + " words found in the document" 
     return word_count
 
 
