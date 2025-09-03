@@ -14,12 +14,14 @@ def book_word_counter(filepath):
     word_count = f"{len(words)} words found in the document." 
     return word_count
 
-def book_char_frequencies(filepath): # New function to count character frequencies
+def book_char_frequencies(filepath):  
     freq = {}
+    text = get_book_text(filepath)   # <-- read file contents here
 
-    for ch in filepath:
+    for ch in text:
         if ch.isalpha():  # only alphabet letters
             ch = ch.lower()
             freq[ch] = freq.get(ch, 0) + 1
 
     return freq
+
