@@ -18,4 +18,8 @@ def main():
     print(word_count)
 
 
+<<<<<<< HEAD
 main()
+=======
+main()
+>>>>>>> 928571af56fcb6b5dcca7c65653963924ed042eb
