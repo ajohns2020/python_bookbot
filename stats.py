@@ -18,11 +18,8 @@ def book_char_frequencies(text): # New function to count character frequencies
     freq = {}
 
     for ch in text:
-        if ch.isalpha():  # count only letters (optional)
+        if ch.isalpha():  # only alphabet letters
             ch = ch.lower()
-            if ch in freq:
-                freq[ch] += 1
-            else:
-                freq[ch] = 1
+            freq[ch] = freq.get(ch, 0) + 1
 
     return freq
