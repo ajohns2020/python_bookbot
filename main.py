@@ -24,10 +24,10 @@ filepath = sys.argv[1] # Filepath argument
     
 def main():
     print ("Reading book from :" , filepath)
-    text = get_book_text()
-    word_count = book_word_counter()
-    char_count = book_char_frequencies()
-    report = book_final_report()
+    text = get_book_text(filepath)
+    word_count = book_word_counter(filepath)
+    char_count = book_char_frequencies(filepath)
+    report = book_final_report(filepath)
     print(report)
 
 
