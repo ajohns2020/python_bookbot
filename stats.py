@@ -11,7 +11,7 @@ def get_book_text(filepath): # Stores all characters in memory.
 def book_word_counter(filepath):  
     text = get_book_text(filepath)  # Use the parameter, not hardcoded path
     words = text.split() 
-    word_count = f"Found {len(words)} total words" 
+    word_count = {len(words)} 
     return word_count
 
 def book_char_frequencies(filepath):  
@@ -29,9 +29,9 @@ def book_final_report(filepath):
     text = get_book_text(filepath)
     word_count = book_word_counter(filepath)
     char_freq = book_char_frequencies(filepath)
-
+    report = f"Looking at file: {filepath}\n"
     report = f"Text Length: {len(text)} characters\n"
-    report += f"{word_count}\n"
+    report += f"Found {word_count} total words\n"
     report += "Character Count:\n"
     for ch, count in sorted(char_freq.items()):
         report += f"  {ch}: {count}\n"
