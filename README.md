@@ -1,10 +1,13 @@
 # python_bookbot
 
-This bookbot displays whatever text and within the path books/<filename>. DEFAULT FILEPATH: books/frankenstien.txt 
+This bookbot displays whatever text and within the path books/<filename>. Example: python3 main.py books/frankenstien.txt - will display information assuming the text is present within the books directory.  
 
-NOTE: The original path for frankenstein.txt in books will not download through git clone (to save space). The directory books is located within the .gitignore file. You will have to download a copy of Frankenstien to use:  https://www.gutenberg.org/cache/epub/41445/pg41445.txt OR you can add your own text by changing the file path in main from books/frankenstien. 
 
-ANOTHER NOTE: You need to make a books directory after downloading. 
+ANOTHER NOTE: You need to make a books directory and download any text files after downloading. 
+
+Example texts to use: https://www.gutenberg.org/
+
+Frankenstein txt Link: https://www.gutenberg.org/cache/epub/41445/pg41445.txt
 
 Cloning: git clone https://github.com/ajohns2020/python_bookbot
 
