@@ -31,7 +31,7 @@ def book_final_report(filepath):
     char_freq = book_char_frequencies(filepath)
 
     report = f"Text Length: {len(text)} characters\n"
-    report += f"Found {word_count} total words\n"
+    report += f"{word_count}\n"
     report += "Character Count:\n"
     for ch, count in sorted(char_freq.items()):
         report += f"  {ch}: {count}\n"
