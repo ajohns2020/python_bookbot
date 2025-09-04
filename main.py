@@ -7,14 +7,13 @@ import sys
 from stats import get_book_text, book_word_counter, book_char_frequencies, book_final_report
 
 # Checking if at least two arguments are provided (script name and filepath)
-filepath = sys.argv[1] # Filepath argument
 
 
 if len(sys.argv) < 2:
     print("Usage: python3 main.py <path_to_book>")
     print("Example: python3 main.py books/moby_dick.txt")
     sys.exit(1)
-    
+
 filepath = sys.argv[1] # Filepath argument
 
 
