@@ -1,5 +1,5 @@
 # python 
-# Moving functions to stats.py for better organization
+# Moving functions to stats.py for better organization @ajohns2020 
 
 
 def get_book_text(filepath): # Stores all characters in memory.
@@ -20,8 +20,21 @@ def book_char_frequencies(filepath):
 
     for ch in text:
         if ch.isalpha():  # only alphabet letters
-            ch = ch.lower()
-            freq[ch] = freq.get(ch, 0) + 1
+            ch = ch.lower() # normalize to lowercase
+            freq[ch] = freq.get(ch, 0) + 1 # count frequency
 
     return freq
+
+def book_final_report(filepath):
+    text = get_book_text(filepath)
+    word_count = book_word_counter(filepath)
+    char_freq = book_char_frequencies(filepath)
+
+    report = f"Text Length: {len(text)} characters\n"
+    report += f"Found {word_count} total words\n"
+    report += "Character Count:\n"
+    for ch, count in sorted(char_freq.items()):
+        report += f"  {ch}: {count}\n"
+
+    return report
 
